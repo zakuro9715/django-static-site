@@ -1,0 +1,14 @@
+# pyvenv
+/bin/
+/lib/
+/lib64
+/include
+/pyvenv.cfg
+
+build
+dist
+*.egg-info
+*.pyc
+__pycache__/
+
+staticroot

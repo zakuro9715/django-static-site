@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block nav-quickstart-class %}active{% endblock %}
+
+{% block title %}quick start guide{% endblock %}
+
+{% block page_header %}Quick Start Guide{% endblock %}
+
+{% block content %}
+<div>
+  <p>Install django-static-site with pip</p>
+  <pre>pip install django-static-site</pre>
+
+  <p>Add 'static_site' to INSTALLED_APPS in settings.py</p>
+  <pre>
+INSTALLED_APPS = (
+  ...
+  'static_site',
+)</pre>
+
+  <p>Make a 'index.html' file in your template directory.</p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;</pre>
+
+  <p>Run testing server</p>
+  <pre>./manage.py runserver</pre>
+
+  <p>Access to <a href='http://localhost:8000/'>http://localhost:8000/</a></p>
+</div>
+{% endblock content %}
